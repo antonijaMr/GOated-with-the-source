@@ -1,0 +1,20 @@
+<html>
+    <head>
+      <!-- <link rel="stylesheet" href="styles.css"> -->
+    </head>
+    <body>
+<div class="topnav">
+  <a href="/templates/index.html">Home</a>
+  <a href="/create">Create</a>
+  <a class="active" href="/templates/edit.html">Edit</a>
+  <a href="/templates/search.html">Search</a>
+</div>
+
+<form action="/editResult/?Index={{.Index}}" method="POST">
+  <label for="priceID">Content:</label><br>
+  <input type="text" id="priceID" name="content" value="{{.Content}}"><br>
+  <input type="submit" value="edit">
+</form>
+<a href="/read">search</a>
+    </body>
+</html>
